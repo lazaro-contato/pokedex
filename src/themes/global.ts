@@ -5,7 +5,10 @@ export default createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
-      color: red;
+    }
+    
+    body {
+      background-color: ${props => props.theme.colors.background};
     }
 
 `

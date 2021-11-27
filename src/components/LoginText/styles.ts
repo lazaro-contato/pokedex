@@ -6,6 +6,6 @@ export const LoginTextStyle = styled.p`
     font-size: 36px;
     margin-bottom: 48px;
   
-    color: ${COLORS.GREY500};
+    color: ${props => props.theme.colors.mainText};
   
 `

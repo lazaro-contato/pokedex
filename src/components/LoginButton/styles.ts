@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {COLORS, FONTWEIGHT, MEDIA} from "../../themes/global";
+import { FONTWEIGHT, MEDIA} from "../../themes/global";
 
 export const LoginButton = styled.button`
   height: 54px;
@@ -7,9 +7,9 @@ export const LoginButton = styled.button`
   margin-top: 18px;
   border-radius: 8px;
   border: 1px solid transparent;
-  
   background-color: ${props => props.theme.colors.primary};
-  color: ${COLORS.GREY500};
+  
+  color: ${props => props.theme.colors.GREY500};
   font-weight: ${FONTWEIGHT.MEDIUM};
   
   cursor: pointer;

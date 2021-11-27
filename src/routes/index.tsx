@@ -4,9 +4,13 @@ import {
     Routes,
     Route
 } from "react-router-dom";
-import {Login} from "../pages/Login/index";
+import {Login} from "../pages/Login";
 
-export const MainRoute = () => {
+type Props = {
+
+}
+
+export const MainRoute = (props: Props) => {
     return(
         <BrowserRouter>
             <Routes>
