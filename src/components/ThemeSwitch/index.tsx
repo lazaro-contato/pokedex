@@ -1,30 +1,29 @@
 // @flow
 import * as React from 'react';
 import Switch from "react-switch";
-import {useState} from "react";
-import { useSelector, useDispatch } from 'react-redux'
 
 import {toggleTheme} from "../../store/themeApplication/Theme.actions";
-
+import {useDispatch, useSelector} from "react-redux";
+import {RootState} from "../../store/store";
 import light from "../../themes/light";
-import dark from "../../themes/dark";
+
 
 type Props = {
 };
 
 export const ThemeSwtich= (props: Props) => {
+    const globalTheme = useSelector((state:RootState) => state.appTheme)
+    const dispatch = useDispatch()
 
-    const [theme, setTheme] = useState(light)
-
-   const toggleTheme = () => {
-        setTheme(theme.title === 'light' ? dark : light)
-
-    }
+    function setNewTheme() {
+        const newTheme = globalTheme === 'light' ? 'dark' : 'light'
+        dispatch(toggleTheme(newTheme))
+    };
 
     return (
         <div>
-            <Switch onChange={toggleTheme}
-                    checked={theme.title === 'dark'}
+            <Switch onChange={setNewTheme}
+                    checked={globalTheme === 'dark'}
                     checkedIcon={false}
                     uncheckedIcon={false}
                     width={40}
@@ -34,3 +33,4 @@ export const ThemeSwtich= (props: Props) => {
         </div>
     );
 };
+

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {FONTWEIGHT, COLORS} from "../../themes/global";
+import {FONTWEIGHT} from "../../themes/global";
 
 export const LoginTextStyle = styled.p`
     font-weight: ${FONTWEIGHT.BOLD};

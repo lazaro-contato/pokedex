@@ -13,6 +13,8 @@ export default {
         textMedium: '#1E1E1F',
         textRegular: '#7D7E80',
         border: '#7D7E80',
+        primaryTheme: '#FFCB05',
+        contentTheme: '#7D7E80',
 
         GREY500: '#1E1E1F',
         GREY400: '#4B4B4D',

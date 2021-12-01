@@ -17,6 +17,8 @@ declare module 'styled-components' {
             textMedium: string;
             textRegular: string;
             border: string;
+            primaryTheme: string;
+            contentTheme: string;
 
             GREY500: string;
             GREY400: string;

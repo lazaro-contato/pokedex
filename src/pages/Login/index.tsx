@@ -1,5 +1,4 @@
-import React, {useContext} from 'react';
-import {ThemeContext} from "styled-components";
+import React from 'react';
 
 
 import {LoginSection} from "../../components/LoginSection";

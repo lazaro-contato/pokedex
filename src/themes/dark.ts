@@ -1,6 +1,5 @@
-const dark = {
+export default {
     title: 'dark',
-
     colors: {
         primary: '#FFCB05',
         secondary: '#3B5CA8',
@@ -14,6 +13,8 @@ const dark = {
         textMedium: '#FFFFFF',
         textRegular: '#D2D4D6',
         border: '#FFFFFF',
+        primaryTheme: '#4B4B4D',
+        contentTheme: '#D2D4D6',
 
 
         GREY500: '#1E1E1F',
@@ -24,7 +25,3 @@ const dark = {
         WHITE: '#FFFFFF'
     },
 }
-
-
-
-export default dark;
