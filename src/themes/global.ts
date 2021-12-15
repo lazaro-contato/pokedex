@@ -31,11 +31,11 @@ export const FONTWEIGHT = {
 }
 
 export const MEDIA = {
-    EXTRA_LARGE_SCREEN: '@media(min-width: 1500px)',
-    LARGE_SCREEN: '@media(min-width: 1400px)',
+    EXTRA_LARGE_SCREEN: '@media(max-width: 1500px)',
+    LARGE_SCREEN: '@media(max-width: 1400px)',
     MEDIUM_SCREEN: '@media(max-width: 1000px)',
-    SMALL_SCREEN:'@media(max-width: 640px)',
-    EXTRA_SMALL_SCREEN: '@media(max-width: 400px)',
+    SMALL_SCREEN:'@media(max-width: 800px)',
+    EXTRA_SMALL_SCREEN: '@media(max-width: 360px)',
 }
 
 export const MAXMEDIA = {

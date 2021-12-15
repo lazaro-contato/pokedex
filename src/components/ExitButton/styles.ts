@@ -6,6 +6,7 @@ export const ExitBtn = styled.div`
   height: 28px;
   padding: 0 10px;
   border-radius: 8px;
+  margin-left: 10px;
   
   display: flex;
   justify-content: space-between;

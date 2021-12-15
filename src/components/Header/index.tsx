@@ -1,25 +1,30 @@
 import React from "react";
-import {HeaderContainer, HeaderElement, PokeLogoImage} from './styles'
+import {HeaderContainer, LeftSection, MiddleSection, RightSection, PokeLogoImage} from './styles'
 
 import logoImage from '../../assets/pokemon-white-logo.svg'
-import {Navbar} from "../Navbar";
 import {ExitButton} from "../ExitButton";
+import {NavLinks} from "../NavLinks";
+import {useMediaQuery} from "react-responsive";
+import {MobileNavLinks} from "../MobileNavLinks";
 
 type Props = {
 
 }
 
 export const Header = (props: Props) => {
+    const isMobile = useMediaQuery({query: '(max-width: 800px)'})
     return (
-        <div>
-            <HeaderContainer>
-                <HeaderElement>
-                    <PokeLogoImage src={logoImage} />
-                    <Navbar />
-                    <ExitButton />
-                </HeaderElement>
-            </HeaderContainer>
-
-        </div>
+                <HeaderContainer>
+                    <LeftSection>
+                        <PokeLogoImage src={logoImage} />
+                    </LeftSection>
+                    <MiddleSection>
+                        {!isMobile && <NavLinks />}
+                    </MiddleSection>
+                    <RightSection>
+                        {!isMobile && <ExitButton />}
+                        {isMobile && <MobileNavLinks />}
+                    </RightSection>
+                </HeaderContainer>
     )
 }
